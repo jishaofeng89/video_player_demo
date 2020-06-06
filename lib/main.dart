@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_player_demo/video_player_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -6,6 +7,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
+  final String url = "http://v.360inhands.com/video1.mp4";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,7 +30,8 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: VideoPlayerPage(url: url),
     );
   }
 }
