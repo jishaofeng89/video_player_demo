@@ -43,7 +43,8 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
                 bottom: 0,
                 child: GestureDetector(
                   child: Icon(
-                    _isPlaying ? Icons.pause : Icons.play_arrow
+                    _isPlaying ? Icons.pause : Icons.play_arrow,
+                    color: Colors.blueAccent,
                   ),
                   onTap: () {
                     if(_isPlaying) {
